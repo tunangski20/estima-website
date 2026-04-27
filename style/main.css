@@ -604,6 +604,9 @@ h5{
 .loop-title h1{
   font-family: var(--heading-font);
   font-size: 5rem;
+  transition: 0.5s ease;
+  scale: 1;
+  transform-origin: left;
 }
 
 .loop-title h2{
@@ -611,7 +614,9 @@ h5{
   font-family: var(--heading-font);
 }
 
-
+.loop-title h1:hover{
+  scale:1.1;
+}
 
 
 
@@ -628,7 +633,6 @@ h5{
 .grid-card {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -648,6 +652,10 @@ h5{
 .featured {
   height: 400px;
   margin-bottom: 20px;
+}
+
+.small-ad{
+  border-radius: 20px;
 }
 
 /* Grid */
