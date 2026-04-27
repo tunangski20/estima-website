@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon2.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Estima Website</title>
+  </head>
+  <body>
+
+    <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <img src="img/estima_logo.png" alt="Estima Logo" class="logo">
+      <!-- <div class="spinner"></div> -->
+    </div>
+  </div>
+
+   <!-- Fullscreen Modal -->
+       <div id="videoModal" class="modal">
+        <span class="close" onclick="closeVideo()">×</span>
+        <div class="modal-content">
+          <iframe id="videoFrame"
+            src=""
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+  <div class="main-content" id="main-content">
+
+    <header class="header">
+      <nav class="header-content">
+          <a href="#main"><img src="img/estima_logo.png" alt="Estima Logo" /></a>
+          <ul class="sidebar-nav">
+            <li class="close-btn" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="#main" onclick="hideSidebar()">Home</a></li>
+            <li><a href="#our-work" onclick="hideSidebar()">Our Work</a></li>
+            <li><a href="#who-we-are" onclick="hideSidebar()">Who We Are</a></li>
+            <li><a href="#our-services" onclick="hideSidebar()">Our Services</a></li>
+            <li><a href="#contact" onclick="hideSidebar()">Contact Us</a></li>
+          </ul>
+          <ul class="main-nav">
+            <li class="hide-nav nav-link"><a href="#main">Home</a></li>
+            <li class="hide-nav nav-link"><a href="#our-work">Our Work</a></li>
+            <li class="hide-nav nav-link"><a href="#who-we-are">Who We Are</a></li>
+            <li class="hide-nav nav-link"><a href="#our-services">Our Services</a></li>
+            <li class="hide-nav nav-link"><a href="#contact">Contact Us</a></li>
+          </ul>
+          <div class="menu-button" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+      </nav>
+    </header>
+
+    <main class="main-header"id="main">
+      <div class="overlay"></div>
+      <div class="header-logo">
+        <img id="estima-red-dot" src="img/estima-red-dot.png" alt="" />
+        <img id="estima-logo-main" src="img/estima-logo-main.png" alt="" />
+      </div>
+      <div class="header-text">
+        <p>If the battlefield is in the mind,<br />it is a war we can win.</p>
+      </div>
+    </main>
+
+    <div class="intro">
+        <h1 class="line line1">If the battlefield is in the mind, it is a war we can win.</h1>
+        <!-- <h2 class="line line2">
+          You win by making your idea feel like common sense – something people don’t question, just live with.
+        </h2> -->
+
+        <p class="line line2">
+          When a potential customer likes an ad, they nod, ever so slightly. Getting that all-important but imperceptible nod is difficult because the courtship has to be made in seconds.
+          <br /><br />
+          The nod is usually a reaction to hard sell. The customer nods because the proposition sounds logical to him. But sometimes there is opportunity to turn it into something larger. Into a ‘common sense. 
+          <br /><br />
+          For a proposition to become common sense, it must transcend logic, it must be drenched with emotion. There must be ‘heartsell’.
+          <br /><br />
+          When there is heartsell, we no longer ask the customer for an agreement to purchase an idea; we ask him for a willingness to live with it.
+          <br /><br />
+          Simply stated, your product or service is situated in your customer's home and day like a door and dinner. It enjoys an unquestioned existence, and it is conspicuous when absent. A product presented as a common sense has the magic of ritual, the sturdiness of tradition and the incontestability of gospel. 
+          <br /><br />
+          Imagine your product as a common sense.
+        </p>
+
+        <h3 class="line line3">Ask Estima what they can do for your product.</h3>
+        
+        <div class="scroll-down">
+          <p class="scroll">Scroll Down</p>
+          <img class="arrow-down" src="./img/down-arrow.png" alt="">
+        </div>
+        
+    </div>
+
+    <section class="our-work-section" id="our-work">
+
+      <h1 id="page-head">Our Work</h1>
+      <div class="ritemed-ad-loop">
+         <video autoplay muted loop>
+          <source src="video/rm-vid-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+
+         <div class="loop-title">
+          <h1 class="grid-card main-ad" data-video="LjJhKDGvFMo">Tanggol</h1>
+          <h2>RiteMED</h2>
+          <p>A campaign that asserts Filipinos’ right<br />to choose what they trust – “Basta RiteMED”.</p>
+         </div>
+      </div>
+
+
+
+      <div class="our-work-items">
+          
+        <div class="grid-card featured" data-video="0v156iKyNjM">
+          <img src="img/ads/ritemed-magtanong.png" alt="" >
+          <div class="ad-desc">
+            <h1>Ritemed<span>- Huwag mahihiyang magtanong</span></h1>
+            <p>Turning a brand message into a movement with the golden touch of Susan Roces.</p>
+          </div>
+        </div>
+        
+        <div class="grid">
+          <div class="grid-card" data-video="KF28m69YP9A">
+            <img src="img/ads/clover.png" alt="">
+            <div class="ad-desc">
+              <h2>Clover<span>- Lover ng Clover</span></h2>
+              <p>More than just an endorser, Sarah Geronimo manifests her genuine love for Clover in a campaign.</p>
+            </div>
+          </div>
+
+          <div class="grid-card" data-video="oe5W5J5a2tM">
+            <img src="img/ads/pharex.png" alt="">
+            <div class="ad-desc">
+              <h2>Pharex B-Complex <span>- Bayan ng B</span></h2>
+              <p>For Pharex B-Complex, being the market leader is more than a rank – it’s a proactive strategy to protect, push, and prevail.</p>
+            </div>
+          </div>
+
+          <div class="grid-card" data-video="m09sXaPBiUQ">
+            <img src="img/ads/dona-elena.png" alt="">
+            <div class="ad-desc">
+              <h2>Fly Ace Corporation <span>- Make it Doña Elena</span></h2>
+              <p>Why do you automatically reach for vegetable oil, or soya, or corn, when there's better?</p>
+            </div>
+          </div>
+
+          <div class="grid-card" data-video="pqo0qKa1zsQ">
+            <img src="img/ads/malasakit.png" alt="">
+            <div class="ad-desc">
+              <h2>Unilab <span>- Malasakit</span></h2>
+              <p>From compliance to care: Unilab inspires a nation to speak up and protect each other through the power of <em>malasakit.</em></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="our-work-button"><a href="https://www.youtube.com/@EstimaContent" target="_blank">See More of our Projects</a></div>
+
+      </div>
+
+      <!-- <div class="our-work-content">
+        <div class="work-content-left">
+          <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia consequatur inventore, praesentium assumenda cupiditate perferendis fuga! Quia omnis consequuntur nam.</h2>
+          <div class="work-button">
+            <p>More of our work</p>
+          </div>
+        </div>
+
+        <div class="work-content-right">
+          <video class="work-video" src="video/V3_1.mp4" autoplay muted loop></video>
+        </div>
+      </div> -->
+    </section>
+
+
+
+    <section class="client-section">
+      <h1>Our Valued Clients</h1>
+      <div class="client-logos">
+        <img src="img/clients/ritemed.png" alt="">
+        <img src="img/clients/united-home.png" alt="">
+        <img src="img/clients/pharex.png" alt="">
+        <img src="img/clients/pharex-b.png" alt="">
+        <img src="img/clients/unilab.png" alt="">
+        <img src="img/clients/unilab-education.png" alt="">
+        <img src="img/clients/dolmar.png" alt="">
+        <img src="img/clients/lesies.png" alt="">
+        <img src="img/clients/flyace.png" alt="">
+        <img src="img/clients/fruitas.png" alt="">
+        <img src="img/clients/armynavy.png" alt="">
+        <img src="img/clients/bostik.png" alt="">
+        <img src="img/clients/abby.png" alt="">
+        <img src="img/clients/akbayan.png" alt="">
+        <img src="img/clients/breaking-balls.png" alt="">
+        <img src="img/clients/valenzuela.png" alt="">
+        <img src="img/clients/philhealth.png " alt="">
+        
+      </div>
+        
+    </section>
+
+    <section class="who-we-are-section" id="who-we-are">
+      <h1 id="page-head">Who We Are</h1>
+      <div class="who-we-are-content">
+        <h2>The Estima team combines experience in marketing, advertising, sales, and production.</h2>
+        <img src="img/estima-peeps.png" alt="">
+        <div class="who-we-are-button"><a href="links/our-team.html">Our Team</a></div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="our-services-section" id="our-services">
+      <h1 id="page-head">Our Services</h1>
+      <div class="our-services">
+        <h2><a href="links/advertising.html">Advertising</a></h2>
+        <h2><a href="links/events.html">Events</a></h2>
+        <h2><a href="links/branded-content.html">Branded Content</a></h2>
+        <h2><a href="links/public-relation.html">Public Relations</a></h2>
+        <h2><a href="links/political.html">Political</a></h2>
+      </div>
+        
+    </section>
+
+
+    <!-- <div id="offset" class="contact_wrapper large-12 columns" id="contact">
+      <div class="row" id="contact">
+        <div class="address_wrapper large-6 columns">
+          <img src="img/estima_logo.png" alt="">
+          <h1>Corporate Headquarters</h1>
+          <p>
+            <span class="header-contact">Estima Inc.</span></b> <br />3rd Floor, First Global Building, <br />122
+            Gamboa cor. Salcedo Streets, <br />Legazpi Village, Makati City,
+            <br />1229, Philippines <br /><br /><strong>Tel.</strong><br />(632)
+            812 7038 <br />(632) 804 3049<br /><br /><strong>Email.</strong><br /><a href="mailto:inquiries@estimacontent.com">inquiries@estimacontent.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="contact_map large-12 columns"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyupZbrVoL8AIJyy9LrittxTJl3P4GmPw&amp;callback=initMap"></script>
+    <script>
+      function initMap() {
+        var location = { lat: 14.553753, lng: 121.015745 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 20,
+          center: location,
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
+      }
+    </script>-->
+
+    <footer>
+
+    <div class="footer-details" id="contact">
+
+      <div class="footer-content">
+        <img src="img/estima_logo_foot.png">
+        <p>All Rights Reserved 2026</p>
+      </div>
+
+      <div class="footer-content">
+        <h1>Visit us</h1>
+        <p>First Global Building, Gamboa, Legazpi Village, Makati, Philippines</p>
+      </div>
+
+      <div class="footer-content">
+        <h1>Reach Out to Us</h1>
+        <div class="footer-contact">
+          <p><span class="icon"><ion-icon name="call-outline"></ion-icon></span></ion-icon>0917 135 3471</p>
+          <p><span class="icon"><ion-icon name="mail-outline"></ion-icon></span>Inquiries@estimacontent.com</p>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <h1>Let’s Connect!</h1>
+        <div class="socials">
+          <p class="social-icon"><a href="https://www.instagram.com/estimaadvertising" target="_blank"><img src="img/socials/instagram.png" alt="instagram"></a></p>
+          <p class="social-icon"><a href="https://x.com/estimacontent" target="_blank"><img src="img/socials/x.png" alt="X"></a></p>
+          <p class="social-icon"><a href="https://www.facebook.com/estima.advertising" target="_blank"><img src="img/socials/facebook.png" alt="facebook"></a></p>
+          <p class="social-icon"><a href="https://www.tiktok.com/@estimacontent" target="_blank"><img src="img/socials/tiktok.png" alt="tiktok"></a></p>
+          <p class="social-icon"><a href="https://www.youtube.com/@EstimaContent" target="_blank"><img src="img/socials/youtube.png" alt="youtube"></a></p>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+      
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar-nav')
+        sidebar.style.display = "flex"
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar-nav')
+        sidebar.style.display = "none"
+      }
+
+      </script>
+  </body>
+</html>
