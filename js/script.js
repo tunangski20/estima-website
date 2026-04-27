@@ -69,5 +69,20 @@
 
 
 
+// Changing Video Background for Hero Ad
 
-  
+  const video = document.getElementById("bg-video");
+
+  function setVideoSource() {
+    if (window.innerWidth <= 768) {
+      video.src = "../video/rm-vid-mobile.mp4";   // 📱 mobile video
+    } else {
+      video.src = "../video/rm-vid-1.mp4";  // 💻 desktop video
+    }
+  }
+
+  // Run on load
+  setVideoSource();
+
+  // Run when resizing screen
+  window.addEventListener("resize", setVideoSource);
