@@ -649,10 +649,10 @@ h5{
 }
 
 /* Featured */
-.featured {
+/* .featured {
   height: 400px;
   margin-bottom: 20px;
-}
+} */
 
 .small-ad{
   border-radius: 20px;
@@ -1022,7 +1022,7 @@ OUR SERVICES
   scroll-snap-align: start;
 }
 
-.our-services-section > h1{
+.our-services-section h1{
   text-align: center;
   scale: 1;
   flex-wrap: wrap;
@@ -1036,33 +1036,34 @@ OUR SERVICES
   text-align: center;
 }
 
-.our-services > h2{
+.our-services h2{
   padding: 20px 0;
+  transition: all 0.3s ease;
 }
 
 
-.our-services > h2 a{
+.our-services h2 a{
   font-size: 4rem;
   cursor: pointer;
   color:#6d6d6d;
-  transition: all .3s ease;
   width: 100%;
+  transition: all 0.3s ease;
 }
 
 
-.our-services > h2:hover{
+.our-services h2:hover{
   scale: 1.2;
   /* background-color: var(--accent-color); */
   width: 100%;
 }
 
-.our-services > h2:hover a{
+.our-services h2:hover a{
   color: #f0f0f0;
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .our-services > h2 a{
+  .our-services h2 a{
     font-size: 3rem;
   }
 
