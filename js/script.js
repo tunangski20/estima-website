@@ -9,7 +9,7 @@
     // Fade out preloader
     setTimeout(() => {
       preloader.classList.add("hidden");
-    }, 200);
+    });
   });
 
 
