@@ -32,6 +32,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #f0f0f0;
 }
 
 p {
@@ -218,7 +219,6 @@ h5{
   justify-content: center;
   padding: 10px 30px;
   border-radius: 40px;
-  letter-spacing: 3px;
   font-size: 20px;
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
@@ -323,7 +323,7 @@ h5{
 .main-header{
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bg-people.gif);
+  background-image: url(../img/bg-people2.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -626,6 +626,7 @@ h5{
   margin-bottom: 50px;
   scroll-snap-align: start;
 }
+
 .ritemed-ad-loop::before{
  content:"";
   background-color: rgba(0, 0, 0, 0.4);
@@ -942,9 +943,10 @@ font-weight: normal;
 
 .who-we-are-content > h2{
   width: 70%;
-  margin-bottom: 50px;
-  font-size: 4rem;
+  margin-bottom: 100px;
+  font-size: 3rem;
   text-align: center;
+  line-height: 1.5;
   color: var(--primary-color);
   z-index: 2;
 }
