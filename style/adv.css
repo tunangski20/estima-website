@@ -15,6 +15,23 @@
     background-color: var(--primary-bg-color);
 }
 
+.sub-header{
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6), 50%, #0000);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 150px;
+  opacity: 0;
+  animation: header 1s forwards;
+  animation-delay: 0.5s;
+  transform: translateY(-30px);
+}
+
+
+@keyframes header {
+  to{opacity:1; transform: translateY(0);}
+}
+
 .page-header{
     display: flex;
     width: 100%;
