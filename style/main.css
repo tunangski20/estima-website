@@ -269,9 +269,9 @@ h5{
   background-color: #ffffff;
   animation: overlay 2s forwards;
   animation-delay: 4s;
-  background-image: radial-gradient(#fff, #bfbcbc);
+  /* background-image: radial-gradient(#fff, #bfbcbc); */
   background-attachment: fixed;
-  filter: blur();
+  /* filter: blur(); */
 }
 
 .main-header{
@@ -294,7 +294,7 @@ h5{
   width: 100%;
   height: 100%;
   background: var(--primary-bg-color);
-  filter: blur(30px);
+  /* filter: blur(30px); */
   opacity: 0.5;
   z-index: -1;
 }
@@ -302,11 +302,12 @@ h5{
 #estima-red-dot {
   opacity: 0;
   animation: overlay 1s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 #estima-logo-main {
   opacity: 0;
+  scale: 1;
   animation: overlay 1s forwards;
   animation-delay: 4.5s;
 }
@@ -356,14 +357,14 @@ h5{
   width: 100%;
   height: 100%;
   animation: text-overlay 3s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 
 @keyframes text-overlay {
   0% {
     opacity: 0;
   }
-  70% {
+  80% {
     opacity: 1;
   }
   100% {
@@ -430,7 +431,7 @@ h5{
 
 /* 
 
-====== OUR WORK ======
+====== Intro ======
 
 */
 
@@ -500,9 +501,15 @@ h5{
 } */
 
 .intro h3{
+  font-size: 1.5em;
   margin: 50px 0;
   font-weight: 300;
   color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.intro h3:hover{
+  font-size: 1.3em;
 }
 
 .scroll-down{
@@ -972,7 +979,7 @@ font-weight: normal;
   font-family: var(--heading-font);
   text-align: center;
   padding-bottom: 100px;
-  font-size: 5rem;
+  font-size: 3em;
   color: rgb(231, 21, 21);
   font-weight: 300;
 }
