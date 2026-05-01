@@ -23,7 +23,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  scroll-snap-type: y;
+  scroll-snap-type: y mandatory;
 }
 
 ul {
@@ -502,7 +502,7 @@ h5{
   max-width: 1100px;
   margin: auto;
   text-align: center;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
 }
 
 /* Initial hidden state */
@@ -1114,7 +1114,7 @@ OUR SERVICES
 
 .our-services-section{
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   background-color: #000000;
   flex-direction: column;
@@ -1190,7 +1190,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 20px 0;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 
 .footer-details{
