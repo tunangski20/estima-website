@@ -477,6 +477,7 @@ h5{
   text-transform: uppercase;
   z-index: 99;
   position: relative;
+  margin-top: 100px;
 }
 
 
@@ -501,7 +502,7 @@ h5{
   max-width: 1100px;
   margin: auto;
   text-align: center;
-  scroll-snap-align: start;
+  /* scroll-snap-align: center; */
 }
 
 /* Initial hidden state */
@@ -550,7 +551,7 @@ h5{
 
 .intro h1{
   color: var(--accent-color);
-  margin: 50px 0;
+  margin: 200px auto 50px;
   font-weight: 500;
   font-family: var(--heading-font);
 }
@@ -590,7 +591,6 @@ h5{
 .scroll-down{
   justify-content: flex-end;
   opacity: 0;
-  margin-top: 30px;
   transform: translateY(30px);
   padding-bottom: 50px;
 }
@@ -937,7 +937,7 @@ font-weight: normal;
   display: flex;
   flex-direction: column;
   background: url(../img/bg-shoot.jpg);
-  min-height: 100vh;
+  min-height: 110vh;
   background-color:var(--primary-bg-color);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -997,6 +997,7 @@ font-weight: normal;
 }
 
 .who-we-are-section > h1{
+  margin-top: 100px;
   text-align: center;
   font-size:  2rem;
 }
@@ -1057,13 +1058,15 @@ font-weight: normal;
 
 
 .client-section{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 200px 20px;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   min-height: 100vh;
 }
+
 
 .client-section h1{
   font-family: var(--heading-font);
@@ -1282,7 +1285,7 @@ footer {
 }
 
 .social-icon img{
-  width: 25px;
+  width: 30px;
   transition: .3s ease;
 }
 

@@ -1,4 +1,12 @@
 
+
+  // Return on top of the page when reload
+  window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+  }); 
+  
+  
+  
   window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     const content = document.getElementById("main-content");
@@ -13,22 +21,45 @@
   });
 
 
-  
+  window.addEventListener("load", () => {
+    const box = document.getElementById("estima-logo-main");
+
+    document.body.classList.add("no-scroll");
+
+    const unlock = () => {
+      document.body.classList.remove("no-scroll");
+    };
+
+    if (box) {
+      const styles = getComputedStyle(box);
+
+      const duration = parseFloat(styles.animationDuration) * 1000;
+      const delay = parseFloat(styles.animationDelay) * 1000;
+
+      setTimeout(unlock, duration + delay);
+
+      box.addEventListener("animationend", unlock, { once: true });
+    } else {
+      unlock();
+    }
+  });
+
+
 
 
 // Disable scroll on animation load
 
-  window.addEventListener("load", () => {
-  const box = document.getElementById("estima-logo-main");
+  // window.addEventListener("load", () => {
+  // const box = document.getElementById("estima-logo-main");
 
-      // Lock scroll
-      document.body.classList.add("no-scroll");
+  //     // Lock scroll
+  //     document.body.classList.add("no-scroll");
 
-      // Unlock when animation ends
-      box.addEventListener("animationend", () => {
-        document.body.classList.remove("no-scroll");
-      }, { once: true });
-    });
+  //     // Unlock when animation ends
+  //     box.addEventListener("animationend", () => {
+  //       document.body.classList.remove("no-scroll");
+  //     }, { once: true });
+  //   });
 
 
 
