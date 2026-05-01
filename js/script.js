@@ -16,12 +16,8 @@
 // Intro Animation
 
  document.addEventListener("DOMContentLoaded", function () {
+  
   const section = document.querySelector(".intro");
-
-  if (!section) {
-    console.error("Section not found");
-    return;
-  }
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -29,13 +25,14 @@
         if (entry.isIntersecting) {
           section.classList.add("show");
 
+
           // run once only
           observer.unobserve(section);
         }
       });
     },
     {
-      threshold: 0.8
+      threshold: 0.6
     }
   );
 

@@ -122,7 +122,7 @@ h5{
 
 
 .header {
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6), 50%, #0000);
+  /* background-image: linear-gradient(to bottom, rgba(255,255,255,0.6), 50%, #0000); */
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -207,10 +207,11 @@ h5{
   height: 100%;
   font-size: 30px;
   transition: 0.3s ease;
+  color: var(--accent-color);
 }
 
 .nav-icon:hover{
-  font-size: 40px;
+  filter: drop-shadow(2px 2px 1px #000);
 }
 
 
@@ -228,7 +229,7 @@ h5{
 .talk-to-us:hover{
   background-color: var(--accent-color);
   color: var(--primary-color);
-  filter: drop-shadow(2px 5px 10px #000);
+  filter: drop-shadow(2px 2px 1px #000);
 }
 
 /* .main-nav li:hover a{
@@ -496,6 +497,7 @@ h5{
 .line {
   opacity: 0;
   transform: translateY(30px);
+  cursor: pointer;
 }
 
 /* Animation */
@@ -508,15 +510,19 @@ h5{
   animation-delay: 0.6s;
 }
 
-.show .line3 {
+.show .line3{
   animation: fadeUp 0.8s ease forwards;
   animation-delay: 1.7s;
   cursor: pointer;
+  z-index: 4;
 }
 
-.show .line3:hover {
+.show .line3:hover a{
   color: #aa0000;
 }
+
+
+
 
 .show .scroll-down{
   animation: fadeUp 0.8s ease forwards;
@@ -539,7 +545,7 @@ h5{
 }
 
 .intro p{
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
@@ -551,14 +557,24 @@ h5{
   line-height: 1.5;
 } */
 
-.intro h3{
+.intro h3{ 
   position: relative;
-  font-size: 1.5em;
   margin: 50px 0;
   font-weight: 300;
-  color: var(--secondary-color);
+  color:  var(--primary-bg-color);
   cursor: pointer;
 }
+
+.intro h3 a{ 
+  animation: none !important;
+  color:  var(--primary-bg-color);
+}
+
+.intro .line h3:hover{
+  animation: none !important;
+  color: #aa0000;
+}
+
 
 .scroll-down{
   justify-content: flex-end;
@@ -931,20 +947,31 @@ font-weight: normal;
   z-index: 1;
 }
 
+.who-we-are-section::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 10%, #0000)
+}
+
 .who-we-are-content{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
   z-index: 2;
 }
 
 .who-we-are-content > h2{
   width: 70%;
-  margin-bottom: 100px;
-  font-size: 3rem;
+  margin-bottom: 50px;
+  font-size: 2rem;
   text-align: center;
   line-height: 1.5;
   color: var(--primary-color);
@@ -1079,7 +1106,7 @@ OUR SERVICES
   flex-direction: column;
   align-items: center;
   padding: 100px 0;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 
 .our-services-section h1{
@@ -1089,7 +1116,7 @@ OUR SERVICES
 }
 
 .our-services{
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1103,7 +1130,7 @@ OUR SERVICES
 
 
 .our-services h2 a{
-  font-size: 4rem;
+  font-size: 3rem;
   cursor: pointer;
   color:#6d6d6d;
   width: 100%;
