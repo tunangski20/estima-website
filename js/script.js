@@ -13,6 +13,26 @@
   });
 
 
+  
+
+
+// Disable scroll on animation load
+
+  window.addEventListener("load", () => {
+  const box = document.getElementById("estima-logo-main");
+
+      // Lock scroll
+      document.body.classList.add("no-scroll");
+
+      // Unlock when animation ends
+      box.addEventListener("animationend", () => {
+        document.body.classList.remove("no-scroll");
+      }, { once: true });
+    });
+
+
+
+
 // Intro Animation
 
  document.addEventListener("DOMContentLoaded", function () {
