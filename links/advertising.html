@@ -27,6 +27,18 @@
     </div>
   </div>
 
+  <div id="videoModal" class="modal">
+      <span class="close" onclick="closeVideo()">×</span>
+      <div class="modal-content">
+        <iframe id="videoFrame"
+          src=""
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen>
+        </iframe>
+      </div>
+  </div>
+
   <div class="main-content" id="main-content">
 
     <header class="sub-header">
@@ -48,15 +60,185 @@
     </header>
 
     <main class="secondary-page">
-        <div class="page-header">
+        <div class="page-header ad-header">
             <h1>Advertising</h1>
         </div>
 
-
+        
         <div class="adv-wrapper">
           <h1 class="adv-intro">Estima creates advertising that goes beyond entertainment – it drives results.</h1>
-          <h2 class="adv-ask">Ask Estima what they can do for your product.</h2>
-          <div class="adv-images">
+          <h2 class="adv-ask"><a href="../links/contact-us.html">Ask Estima what they can do for your product.</a></h2>
+
+          <div class="ads-holder">
+            <h1 class="ad-title">
+              RiteMED
+            </h1>
+            <div class="image-thumb ">
+              <div class="image-grid grid-card" data-video="JoJbH4GGu5M">
+                <img src="../img/advertising/ritemed/unahan.png" alt="">
+                <p class="description">Unahan</p>
+              </div>
+              <div class="image-grid grid-card" data-video="wW3ZpVg52uE">
+                <img src="../img/advertising/ritemed/good-doc.png" alt="">
+                <p class="description">Good Doc</p>
+              </div>
+              <div class="image-grid grid-card" data-video="POr979r2Dng">
+                <img src="../img/advertising/ritemed/parangal.png" alt="">
+                <p class="description">Parangal</p>
+              </div>
+              <div class="image-grid grid-card" data-video="RO8duAhTTBs">
+                <img src="../img/advertising/ritemed/carer.png" alt="">
+                <p class="description">Carer</p>
+              </div>
+              <div class="image-grid grid-card" data-video="0v156iKyNjM">
+                <img src="../img/advertising/ritemed/singing-queen.png" alt="">
+                <p class="description">Singing Queen</p>
+              </div>
+              <div class="image-grid grid-card grid-card" data-video="OTYPhqlwbRQ">
+                <img src="../img/advertising/ritemed/lola-kap-reminds.png" alt="">
+                <p class="description">Lola kap reminds</p>
+              </div>
+              <div class="image-grid grid-card" data-video="k_HDEfBvT1M">
+                <img src="../img/advertising/ritemed/bisita.png" alt="">
+                <p class="description">Bisita</p>
+              </div>
+              <div class="image-grid grid-card" data-video="WJz24xWp_n4">
+                <img src="../img/advertising/ritemed/may-ritemed-na-nito.png" alt="">
+                <p class="description">May ritemed na nito</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-holder">
+            <h1 class="ad-title">
+              Clover Chips
+            </h1>
+            <div class="image-thumb">
+              <div class="image-grid grid-card" data-video="49BYutnDWYU">
+                <img src="../img/advertising/clover/autograph.png" alt="">
+                <p class="description">Autograph</p>
+              </div>
+              <div class="image-grid grid-card" data-video="KF28m69YP9A">
+                <img src="../img/advertising/clover/lover-ng-clover.png" alt="">
+                <p class="description">Lover ng Clover</p>
+              </div>
+              <div class="image-grid grid-card" data-video="Nm24Z_YCCkk">
+                <img src="../img/advertising/clover/bench.png" alt="">
+                <p class="description">Bench</p>
+              </div>
+              <div class="image-grid grid-card" data-video="_cV0aJ1HbE0">
+                <img src="../img/advertising/clover/last-chip.png" alt="">
+                <p class="description">Last Chip</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-holder">
+            <h1 class="ad-title">
+              Pharex
+            </h1>
+            <div class="image-thumb">
+              <div class="image-grid grid-card" data-video="oe5W5J5a2tM">
+                <img src="../img/advertising/pharex/bayan-ng-b.png" alt="">
+                <p class="description">Bayan ng B</p>
+              </div>
+              <div class="image-grid grid-card" data-video="Mm1rLhTMN10">
+                <img src="../img/advertising/pharex/cla.png" alt="">
+                <p class="description">CLA</p>
+              </div>
+              <div class="image-grid grid-card" data-video="-cKxC_HqQ9A">
+                <img src="../img/advertising/pharex/sunshine.png" alt="">
+                <p class="description">Sunshine</p>
+              </div>
+              <div class="image-grid grid-card" data-video="I1KmQzgUxWM">
+                <img src="../img/advertising/pharex/tulong.png" alt="">
+                <p class="description">Tulong</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-holder">
+            <h1 class="ad-title">
+              United Home
+            </h1>
+            <div class="image-thumb">
+              <div class="image-grid grid-card" data-video="ZHVAirRglGo">
+                <img src="../img/advertising/united-home/glow.png" alt="">
+                <p class="description">Glow</p>
+              </div>
+              <div class="image-grid grid-card" data-video="a-HIxl7jkzI">
+                <img src="../img/advertising/united-home/candylets.png" alt="">
+                <p class="description">Candylets</p>
+              </div>
+              <div class="image-grid grid-card" data-video="ZHVAirRglGo">
+                <img src="../img/advertising/united-home/glow.png" alt="">
+                <p class="description">Glow</p>
+              </div>
+              <div class="image-grid grid-card" data-video="a-HIxl7jkzI">
+                <img src="../img/advertising/united-home/candylets.png" alt="">
+                <p class="description">Candylets</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ads-holder">
+            <h1 class="ad-title">
+              More of our works
+            </h1>
+            <div class="image-thumb">
+              <div class="image-grid grid-card" data-video="Hsd_lQghPa8">
+                <img src="../img/advertising/others/dolmar-land.png" alt="">
+                <p class="description">Dolmar Land</p>
+              </div>
+              <div class="image-grid grid-card" data-video="zBK7N7gHiJg">
+                <img src="../img/advertising/others/gluta-c.png" alt="">
+                <p class="description">Gluta-C</p>
+              </div>
+              <div class="image-grid grid-card" data-video="JDxbtrTmAQQ">
+                <img src="../img/advertising/others/hawa.png" alt="">
+                <p class="description">Hawa</p>
+              </div>
+              <div class="image-grid grid-card" data-video="2XqN2n2kyOQ">
+                <img src="../img/advertising/others/ultra-fino.png" alt="">
+                <p class="description">Ultra Fino</p>
+              </div>
+              <div class="image-grid grid-card" data-video="3yMFXROcRis">
+                <img src="../img/advertising/others/army-navy.png" alt="">
+                <p class="description">ArmyNavy</p>
+              </div>
+              <div class="image-grid grid-card" data-video="m09sXaPBiUQ">
+                <img src="../img/advertising/others/dona-elena.png" alt="">
+                <p class="description">Doña Elena Olive Oil</p>
+              </div>
+              <div class="image-grid grid-card" data-video="9hLzcyPTaVA">
+                <img src="../img/advertising/others/solmux-advance.png" alt="">
+                <p class="description">Solmux Advance</p>
+              </div>
+              <div class="image-grid grid-card" data-video="_rbHuK_e7RQ">
+                <img src="../img/advertising/others/revicon-max.png" alt="">
+                <p class="description">Revicon Max</p>
+              </div>
+              <div class="image-grid grid-card" data-video="BJyXl0M2fbk">
+                <img src="../img/advertising/others/fruitas.png" alt="">
+                <p class="description">Fruitas</p>
+              </div>
+              <div class="image-grid grid-card" data-video="pqo0qKa1zsQ">
+                <img src="../img/advertising/others/malasakit.png" alt="">
+                <p class="description">RiteMED - Malasakit</p>
+              </div>
+              <div class="image-grid grid-card" data-video="2JHMfrKD3h8">
+                <img src="../img/advertising/others/cheezy-jawdrop.png" alt="">
+                <p class="description">Cheezy - Jaw Drop</p>
+              </div>
+              <div class="image-grid grid-card" data-video="z_xq3TL8Nqc">
+                <img src="../img/advertising/others/breaking-balls.png" alt="">
+                <p class="description">Breaking Balls with Abby Binay</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="adv-images">
             <div class="adv-item tall"><img src="../img/advertising/image-1.png" alt=""></div>
             <div class="adv-item"><img src="../img/advertising/image-2.png" alt=""></div>
             <div class="adv-item tall"><img src="../img/advertising/image-3.png" alt=""></div>
@@ -68,7 +250,7 @@
             <div class="adv-item wide"><img src="../img/advertising/image-9.png" alt=""></div>
             <div class="adv-item big"><img src="../img/advertising/image-10.png" alt=""></div>
             <div class="adv-item"><img src="../img/advertising/image-11.png" alt=""></div>
-          </div>
+          </div> -->
         </div>
     </main>
 

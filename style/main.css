@@ -693,6 +693,11 @@ h5{
   transform-origin: left;
 }
 
+.loop-title .featured-ad{
+  font-family: var(--heading-font);
+  font-size: 2em;
+}
+
 .loop-title h2{
   font-size: 2rem;
   font-family: var(--heading-font);
@@ -700,6 +705,10 @@ h5{
 
 .loop-title h1:hover{
   scale:1.1;
+}
+
+.loop-title .featured-desc{
+  font-size: 20px;
 }
 
 
