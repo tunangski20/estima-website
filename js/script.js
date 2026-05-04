@@ -11,13 +11,13 @@
     const preloader = document.getElementById("preloader");
     const content = document.getElementById("main-content");
 
-    // Show main content
-    content.style.display = "block";
+    // Show main content smoothly
+  content.style.opacity = "1";
+  content.style.visibility = "visible";
 
-    // Fade out preloader
-    setTimeout(() => {
-      preloader.classList.add("hidden");
-    });
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  });
   });
 
 
