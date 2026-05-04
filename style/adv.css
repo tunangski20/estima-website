@@ -60,6 +60,7 @@ hr{
     min-height: 100vh;
     scroll-snap-align: start;
     margin-bottom: 100px;
+    z-index: 1;
 }
 
 .main-team{
@@ -184,6 +185,7 @@ hr{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    z-index: 1;
 }
 
 .team-header::before{
