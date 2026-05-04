@@ -6,7 +6,14 @@
   --heading-font: "Staatliches", sans-serif;
 }
 
+hr{
+    border: 2px solid var(--accent-color);
+    max-width: 1200px;
+    z-index: 2;
+}
+
 .secondary-page{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,12 +212,11 @@
 .public-wrapper,
 .branded-wrapper,
 .political-wrapper{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
-    margin-bottom: 200px;
     scroll-snap-align: start;
     max-width: 1100px;
 }
@@ -225,6 +231,7 @@
     margin-top: 100px;
     color: var(--primary-color);
     line-height: 1.5; 
+    width: 100%;
 }
 
 .adv-ask,
@@ -236,6 +243,8 @@
     font-size: 25px;
     font-weight: 300;
     margin-bottom: 200px;
+    text-align: center;
+    width: 100%;
 }
 
 .adv-ask a{
@@ -319,6 +328,22 @@
     .branded-wrapper,
     .political-wrapper{
         padding: 20px;
+    }
+
+    .adv-intro,
+    .event-intro,
+    .public-intro,
+    .branded-intro,
+    .political-intro{
+        font-size: 1.5rem;
+    }
+
+    .adv-ask,
+    .event-ask,
+    .public-ask,
+    .branded-ask,
+    .political-ask{
+        font-size: 18px;
     }
     .wide,
     .big {
@@ -476,7 +501,8 @@ button{
     overflow: hidden;
 }
 
-.ad-title{
+.ad-title,
+.pol-title{
     font-size: 2em;
     font-family: var(--heading-font);
     color: var(--accent-color);
@@ -540,4 +566,46 @@ button{
     margin: 0 0 5px 10px;
     z-index: 2;
     line-height: 1;
+}
+
+
+
+/* POLITICAL */
+
+.political-holder{
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: var(--primary-color);
+    scroll-snap-align: start;
+}
+
+.political-holder iframe{
+    max-width: 800px;
+    height: 400px;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.political-holder .pol-ad-title{
+    font-family: var(--heading-font);
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.political-holder p{
+    font-size: 18px;
+}
+
+.political-holder .image-thumb{
+    margin-bottom: 100px;
+}
+
+.political-holder .image-thumb .image-grid{
+    cursor: auto;
 }
