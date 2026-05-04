@@ -1307,6 +1307,7 @@ footer {
 @media (max-width: 768px) {
   .footer-details{
     padding: 50px;
+    justify-content: left;
   }
   .footer-contact img{
     width: 15px;
