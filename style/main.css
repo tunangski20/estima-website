@@ -527,7 +527,7 @@ h5{
 
 .show .line3{
   animation: fadeUp 0.8s ease forwards;
-  animation-delay: 1.7s;
+  animation-delay: 1s;
   cursor: pointer;
   z-index: 4;
 }
