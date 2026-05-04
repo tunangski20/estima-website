@@ -587,14 +587,16 @@ button{
     padding: 20px;
     color: var(--primary-color);
     scroll-snap-align: start;
+    z-index: 1;
 }
 
 .political-holder iframe{
     max-width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     border: 1px solid var(--accent-color);
     border-radius: 20px;
-    margin: 20px 0 20px 0;
+    margin: 20px auto 20px;
 }
 
 .political-holder .pol-ad-title{
@@ -656,5 +658,9 @@ button{
     }
     .sub-services h1{
         margin:20px;
+    }
+
+    .political-holder iframe{
+        height: 300px;
     }
 }
