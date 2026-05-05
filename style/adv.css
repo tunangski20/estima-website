@@ -512,7 +512,7 @@ button{
     font-size: 2em;
     font-family: var(--heading-font);
     color: var(--accent-color);
-    margin: 100px 0 30px 0;
+    margin: 100px 0 10px 0;
 }
 
 .image-thumb{
@@ -603,7 +603,7 @@ button{
 
 .political-holder .pol-ad-title{
     font-family: var(--heading-font);
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1.5rem;
 }
 
@@ -613,6 +613,10 @@ button{
 
 .political-holder .image-thumb{
     margin-bottom: 80px;
+}
+
+.political-holder .image-thumb .image-grid::before{
+    background-image: none;
 }
 
 .political-holder .image-thumb .image-grid{
@@ -674,4 +678,13 @@ button{
     .political-holder iframe{
         height: 200px;
     }
+}
+
+
+
+
+.events-holder{
+    display: flex;
+    max-height: 100vh;
+    
 }
