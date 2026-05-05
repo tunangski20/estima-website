@@ -46,6 +46,15 @@
 
 
 
+  window.addEventListener("scroll", () => {
+    document.querySelectorAll(".fade-up").forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 200) {
+        el.classList.add("active");
+      }
+    });
+  });
+
+
 
 // Disable scroll on animation load
 
@@ -134,3 +143,8 @@
 
   // Run when resizing screen
   window.addEventListener("resize", setVideoSource);
+
+
+
+
+ 

@@ -4,6 +4,7 @@
   --secondary-color: #747474;
   --accent-color: #aa0000; 
   --heading-font: "Staatliches", sans-serif;
+  --main-font: 'Inter', sans-serif;
 }
 
 hr{
@@ -23,7 +24,6 @@ hr{
 }
 
 .sub-header{
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6), 50%, #0000);
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -32,6 +32,7 @@ hr{
   animation: header 1s forwards;
   animation-delay: 0.5s;
   transform: translateY(-30px);
+  padding: 0 20px;
 }
 
 
@@ -509,8 +510,9 @@ button{
 
 .ad-title,
 .pol-title{
-    font-size: 2em;
-    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-family: var(--main-font);
+    text-transform: uppercase;
     color: var(--accent-color);
     margin: 100px 0 10px 0;
 }
@@ -537,6 +539,15 @@ button{
     border-radius: 10px;
     z-index: 3;
     cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+/* when visible */
+.image-grid.show{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .image-grid::before{
@@ -609,6 +620,7 @@ button{
 
 .political-holder p{
     font-size: 18px;
+    font-family: var(--main-font);
 }
 
 .political-holder .image-thumb{
@@ -684,7 +696,36 @@ button{
 
 
 .events-holder{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     max-height: 100vh;
-    
+    max-width: 1200px;
+     scroll-snap-align: start;
+}
+
+.event-title{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.event-photos{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+}
+
+.event-photos img{
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.event-photos img:hover{
+    scale: 1.1;
+    z-index: 2;
 }
