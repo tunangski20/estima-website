@@ -16,6 +16,7 @@
   --accent-color: #aa0000; 
   --heading-font: "Staatliches", sans-serif;
   --main-font: 'Inter', sans-serif;
+  --secondary-font: "Roboto Mono", monospace;
 }
 
 *, html {
@@ -228,6 +229,7 @@ h5{
   justify-content: center;
   padding: 10px 30px;
   border-radius: 40px;
+  font-family: var(--secondary-font);
   font-size: 1.25rem;
   text-transform: uppercase;
   border: 1px solid var(--accent-color);
@@ -684,6 +686,11 @@ h5{
   overflow: hidden;
   margin-bottom: 50px;
   scroll-snap-align: start;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp linear forwards;
+  animation-timeline: view();
+  animation-range: 200px 700px;
 }
 
 .ritemed-ad-loop::before{
@@ -707,6 +714,15 @@ h5{
   transform: translate(-50%, -50%);
   object-fit: cover;
   overflow: clip;
+  
+}
+
+@keyframes fadeInUp {
+ 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .loop-title{
