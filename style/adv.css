@@ -56,6 +56,19 @@ hr{
     font-style: normal;
     font-size: 15vw;
     color: var(--primary-color);
+    opacity: 0;
+    transform: translateY(80px);
+    filter: blur(10px);
+    animation: textReveal 0.8s forwards;
+}
+
+
+@keyframes textReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 .team-wrapper{
@@ -238,7 +251,7 @@ hr{
     line-height: 1.5; 
     width: 100%;
     opacity:0; transform: translateX(100px);
-    animation: fadeInIntro linear forwards;
+    animation: fadeInIntro 0.7s linear forwards;
     animation-timeline: view();
     animation-range: 300px 500px;
 }

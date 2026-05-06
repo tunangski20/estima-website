@@ -199,8 +199,9 @@ h5{
 } */
 
 
-.header-content img{
+.header-content a img{
   height: 50px;
+  mix-blend-mode: difference;
 }
 
 .main-nav{
