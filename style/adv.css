@@ -660,6 +660,10 @@ button{
     cursor: auto;
 }
 
+
+
+
+
 .sub-services-title{
     height: 100vh;
     display: flex;
@@ -727,7 +731,13 @@ button{
     flex-direction: column;
     max-height: 100vh;
     max-width: 1200px;
-     scroll-snap-align: start;
+    scroll-snap-align: start;
+    z-index: 3;
+}
+
+.events-holder h1{
+    color: var(--accent-color);
+    font-family: var(--heading-font);
 }
 
 .event-title{
@@ -740,19 +750,24 @@ button{
 .event-photos{
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    gap: 20px;
 }
 
 .event-photos img{
     width: 400px;
+    height: 300px;
     position: relative;
+    object-fit: cover;
     z-index: 1;
     transition: 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 .event-photos img:hover{
-    scale: 1.1;
     z-index: 2;
 }
 
