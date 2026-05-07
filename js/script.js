@@ -147,4 +147,19 @@
 
 
 
- 
+//  Reveal text on scroll
+
+const revealText = document.querySelector(".hero-reveal");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      revealText.classList.add("show");
+      observer.unobserve(revealText); // run once
+    }
+  });
+}, {
+  threshold: 0.8
+});
+
+observer.observe(revealText);

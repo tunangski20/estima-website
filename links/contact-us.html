@@ -33,7 +33,7 @@
             <li class="close-btn" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
             <!-- <li><a href="https://www.instagram.com/estimaadvertising" onclick="hideSidebar()"><span class="nav-icon"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
             <li><a href="https://www.facebook.com/estima.advertising" onclick="hideSidebar()"><span class="nav-icon"><ion-icon name="logo-facebook"></ion-icon></span></a></li> -->
-            <li><a class="talk-to-us" href="#" onclick="hideSidebar()">Talk to Us</a></li>
+            <li><a class="form-talk-to-us" href="#" onclick="hideSidebar()">Talk to Us</a></li>
           </ul>
           <ul class="main-nav">
             <!-- <li class="hide-nav nav-link"><a href="https://www.instagram.com/estimaadvertising"><span class="nav-icon"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
@@ -50,7 +50,7 @@
         </div> -->
         <div class="contact-wrapper">
             <div class="form-contact">
-                    <h1 class="talk-to-us">Talk to Us</h1>
+                    <h1 class="form-talk-to-us">Talk to Us</h1>
                     <p><span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>+63 917 135 3471</p>
                     <p><span class="icon"><ion-icon name="call-outline"></ion-icon></span>+63 917 135 3471</p>
                     <p><span class="icon"><ion-icon name="mail-outline"></ion-icon></span><a href="mailto:inquiries@estimacontent.com">Inquiries@estimacontent.com</a></p> 
@@ -80,7 +80,7 @@
                         <input type="text" name="company" id="company">
 
                     <label for="contact">Contact Number</label>
-                        <input type="text" name="contact" id="contact">
+                        <input type="tel" name="contact" id="contact" pattern="^(\+63|0)9\d{9}$" required>
 
                     <label for="message">Message</label>
                         <textarea type="textarea" name="message" id="message"></textarea>
