@@ -201,6 +201,7 @@ hr{
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
+    position: relative;
 }
 
 .team-header::before{
