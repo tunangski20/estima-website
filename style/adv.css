@@ -398,6 +398,7 @@ hr{
     scroll-snap-align: start;
 }
 
+
 .form-contact p i{
     width: 50px;
     color: #ffffff;
@@ -445,10 +446,14 @@ hr{
 
 .form-contact .form-socials{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+
 .form-contact .form-socials img{
     width: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
 }
 
 .our-socials{

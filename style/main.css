@@ -1205,7 +1205,7 @@ OUR SERVICES
 }
 
 .our-services{
-  padding: 50px 100px;
+  padding: 50px 30px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1253,7 +1253,7 @@ OUR SERVICES
   }
 
   .our-services{
-    padding-top: 30px;
+    padding: 50px 0;
   }
 }
 
@@ -1373,6 +1373,8 @@ footer {
 .social-icon img{
   width: 30px;
   transition: .3s ease;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
 }
 
 .social-icon img:hover{
