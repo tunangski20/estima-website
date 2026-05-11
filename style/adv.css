@@ -1,7 +1,7 @@
 :root {
   --primary-bg-color:#000000;
   --primary-color: #ffffff; 
-  --secondary-color: #747474;
+  --secondary-color: #929292;
   --accent-color: #aa0000; 
   --heading-font: "Staatliches", sans-serif;
   --main-font: 'Inter', sans-serif;
@@ -727,6 +727,7 @@ button{
 
 .events-holder{
     width: 100%;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     max-height: 100vh;
