@@ -535,6 +535,8 @@ button{
 .ads-holder{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
     margin: 50px auto 100px;
     overflow: hidden;
     scroll-snap-align: start;
