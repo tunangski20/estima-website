@@ -1,7 +1,7 @@
 :root {
   --primary-bg-color:#000000;
   --primary-color: #ffffff; 
-  --secondary-color: #929292;
+  --secondary-color: #464646;
   --accent-color: #aa0000; 
   --heading-font: "Staatliches", sans-serif;
   --main-font: 'Inter', sans-serif;
@@ -289,7 +289,6 @@ hr{
 .adv-images,
 .event-images,
 .public-images,
-.branded-images,
 .political-images{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -505,6 +504,7 @@ button{
     background: url('../img/advertising/ad-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     z-index: 1;
 }
 
@@ -512,7 +512,8 @@ button{
     z-index: 2;
 }
 
-.ad-header::before{
+.ad-header::before,
+.event-header::before{
     content: '';
     position: absolute;
     top: 0;
@@ -522,7 +523,8 @@ button{
     background-color: rgba(0,0,0,0.8);
 }
 
-.ad-header::after{
+.ad-header::after,
+.event-header::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -732,13 +734,22 @@ button{
 
 
 
+.event-header{
+    position: relative;
+    background: url('../img/events/event-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
 .events-holder{
     width: 100%;
+    max-width: 1200px;
+    height: 100%;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
-    max-width: 1200px;
     scroll-snap-align: start;
     z-index: 3;
 }
@@ -755,7 +766,9 @@ button{
     margin-top: 100px;
 }
 
-.event-photos{
+.event-photos,
+.branded-image-holder
+{
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -779,49 +792,86 @@ button{
     z-index: 2;
 }
 
+.others-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    position: relative;
+    height: auto;
+}
+
+.other-event{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+}
+
+.other-event h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+.other-event img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.other-desc{
+    margin-top: 30px;
+    color: var(--primary-color);
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 768px){
+    .event-title{
+         padding-left: 50px;
+    }
+}
 
 
 
 
-.like-our-work{
+
+/* Branded Contrnt */
+
+.branded-holder{
     display: flex;
     flex-direction: column;
-    height: 500px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.like-our-work h1{
-    font-family: var(--heading-font);
-    font-size: 10rem;
-}
-
-
-.lets-talk{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    min-width: 100px;
-    border-radius: 100px;
-    padding: 20px 50px;
-    background-color: var(--accent-color);
-    cursor: pointer;
-    margin-top: 50px;
-    transition: 0.3s ease-in-out;
+    max-width: 1200px;
+    margin: 100px auto;
     
 }
 
-.lets-talk a{
+.branded-title{
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    margin: 0 auto 50px;
+}
+
+.branded-holder img{
+    width: 300px;
+    margin: 0 auto 50px;
+    border-radius: 10px;
+}
+
+
+.branded-image-holder img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.branded-desc{
     color: var(--primary-color);
-    font-family: var(--secondary-font);
+    font-family: var(--main-font);
 }
 
-.lets-talk:hover{
-    background-color: #ffffff;
-}
 
-.lets-talk:hover a{
-    color: var(--secondary-color);
-}
+
+
