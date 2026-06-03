@@ -875,3 +875,33 @@ button{
 
 
 
+/* Public Relations */
+
+.public-holder{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.public-description{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.public-description span{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+
+
+
