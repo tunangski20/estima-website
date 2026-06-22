@@ -364,11 +364,15 @@
     <script>
       function showSidebar(){
         const sidebar = document.querySelector('.sidebar-nav')
+        const hamburger = document.querySelector('.menu-button')
         sidebar.style.display = "flex"
+        hamburger.style.display = "none"
       }
       function hideSidebar(){
         const sidebar = document.querySelector('.sidebar-nav')
+        const hamburger = document.querySelector('.menu-button')
         sidebar.style.display = "none"
+        hamburger.style.display = "block"
       }
       </script>
 
