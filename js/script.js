@@ -163,3 +163,31 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(revealText);
+
+// Change navigation logo color when it overlaps a dark section
+window.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+  const darkSections = document.querySelectorAll("[data-nav-theme=\"dark\"]");
+
+  if (!header || !darkSections.length) return;
+
+  const updateNavTheme = () => {
+    const headerRect = header.getBoundingClientRect();
+    const headerCenter = headerRect.top + Math.min(headerRect.height, 100) / 2;
+
+    let overDarkSection = false;
+
+    darkSections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (headerCenter >= rect.top && headerCenter <= rect.bottom) {
+        overDarkSection = true;
+      }
+    });
+
+    header.classList.toggle("nav-light", overDarkSection);
+  };
+
+  window.addEventListener("scroll", updateNavTheme, { passive: true });
+  window.addEventListener("resize", updateNavTheme);
+  updateNavTheme();
+});

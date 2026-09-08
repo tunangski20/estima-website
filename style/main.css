@@ -199,6 +199,45 @@ h5{
 /* .nav-link a:hover::after{
   transform: scaleX(1);
 } */
+
+/* Navigation logo switches to the supplied white logo over dark sections */
+.header-content img{
+  mix-blend-mode: normal;
+}
+
+.nav-logo{
+  position: relative;
+}
+
+.nav-logo-switch{
+  position: relative;
+  display: block;
+  width: 134px;
+  height: 50px;
+}
+
+.nav-logo-switch img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 50px;
+  transition: opacity 0.3s ease;
+}
+
+.nav-logo-dark{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header.nav-light .nav-logo-default{
+  opacity: 0;
+}
+
+.header.nav-light .nav-logo-dark{
+  opacity: 1;
+}
+
 .header-content img{
   mix-blend-mode: difference;
 }

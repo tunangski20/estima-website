@@ -55,7 +55,12 @@
   <div class="main-content" id="main-content">
     <header class="header">
       <nav class="header-content">
-          <a href="#main"><img src="img/home-logo.png" alt="Estima Logo" /></a>
+          <a href="#main" class="nav-logo">
+            <span class="nav-logo-switch">
+              <img class="nav-logo-default" src="img/home-logo.png" alt="Estima Logo" />
+              <img class="nav-logo-dark" src="img/estima_logo_nav_white.png" alt="Estima Logo" />
+            </span>
+          </a>
           <ul class="sidebar-nav">
             <li class="close-btn" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
             <!-- <li><a href="https://www.instagram.com/estimaadvertising" onclick="hideSidebar()"><span class="nav-icon"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
@@ -230,7 +235,7 @@
         
     </section>
 
-    <section class="who-we-are-section" id="who-we-are">
+    <section class="who-we-are-section" id="who-we-are" data-nav-theme="dark">
       <h1 id="page-head">Who We Are</h1>
       <div class="who-we-are-content">
         <h2 class="hero-reveal">
@@ -245,7 +250,7 @@
 
 
 
-    <section class="our-services-section" id="our-services">
+    <section class="our-services-section" id="our-services"  data-nav-theme="dark">
       <h1 id="page-head">Our Services</h1>
       <div class="our-services">
         <h2 class="fade-up"><a href="links/advertising.html">Advertising</a></h2>
