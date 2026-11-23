@@ -132,9 +132,9 @@
 
   function setVideoSource() {
     if (window.innerWidth <= 768) {
-      video.src = "../video/singin-queen.mp4";   // 📱 mobile video
+      video.src = "./video/singin-queen.mp4";   // 📱 mobile video
     } else {
-      video.src = "../video/singin-queen.mp4";  // 💻 desktop video
+      video.src = "./video/singin-queen.mp4";  // 💻 desktop video
     }
   }
 
